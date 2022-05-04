@@ -32,4 +32,4 @@ A widget that can be used in web and mobile applications to receive feedback fro
 
 ---
 
-Online course by [rocketseat](https://www.rocketseat.com.br/)
+Online workshop from [rocketseat](https://www.rocketseat.com.br/)
