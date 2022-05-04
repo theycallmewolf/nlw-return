@@ -7,11 +7,13 @@ import { ScreenshotButton } from "../ScreenshotButton";
 interface FeedbackContentStepProps {
   feedbackType: FeedbackType;
   handleFeedbackReset: () => void;
+  setFeedbackSent: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export function FeedbackContentStep({
   feedbackType,
   handleFeedbackReset,
+  setFeedbackSent,
 }: FeedbackContentStepProps) {
   const [screenshot, setScreenshot] = useState<string | null>(null);
   const [comment, setComment] = useState("");
@@ -27,6 +29,8 @@ export function FeedbackContentStep({
         screenshot,
         comment,
       });
+
+      setFeedbackSent(true);
     },
     [screenshot, comment]
   );
