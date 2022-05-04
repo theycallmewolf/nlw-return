@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// create `Feedback` table
+model Feedback {
+
+  id String @id @default(uuid())
+  // uuid() alt : Snowflake ID @see https://github.com/twitter-archive/snowflake/tree/b3f6a3c6ca8e1b6847baa6ff42bf72201e2c2231
+
+  type       String
+  // alt: `@db.VarChar(200)` @see https://www.prisma.io/docs/reference/api-reference/prisma-schema-reference
+  comment    String
+  screenshot String?
+
+  @@map("feedbacks")
+}
