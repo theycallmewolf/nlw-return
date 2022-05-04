@@ -61,6 +61,7 @@ export function FeedbackContentStep({
             <ScreenshotButton
               setScreenshot={setScreenshot}
               screenshot={screenshot}
+              disabled={comment.length === 0}
             />
             <button
               type="submit"

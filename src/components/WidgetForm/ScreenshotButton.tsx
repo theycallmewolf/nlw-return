@@ -7,11 +7,13 @@ import { backgroundSize } from "html2canvas/dist/types/css/property-descriptors/
 interface ScreenshotButtonProps {
   screenshot: string | null;
   setScreenshot: React.Dispatch<React.SetStateAction<string | null>>;
+  disabled?: boolean | undefined;
 }
 
 export function ScreenshotButton({
   setScreenshot,
   screenshot,
+  disabled,
 }: ScreenshotButtonProps) {
   const [isTakingScreenshot, setIsTakingScreenshot] = useState(false);
 
@@ -47,7 +49,8 @@ export function ScreenshotButton({
     <button
       type="button"
       onClick={takeScreenshot}
-      className="p-2 bg-zinc-800 rounded-md border-transparent hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors"
+      disabled={disabled}
+      className="p-2 bg-zinc-800 rounded-md border-transparent hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors disabled:opacity-50 disabled:hover:bg-zinc-800"
     >
       {isTakingScreenshot ? (
         <Loading />
