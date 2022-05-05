@@ -43,7 +43,7 @@ export function Widget() {
         handleIndicatorStyle={styles.indicator}
       >
         {feedbackSent ? (
-          <Success />
+          <Success handleFeedbackReset={handleFeedbackReset} />
         ) : (
           <>
             {feedbackType ? (
