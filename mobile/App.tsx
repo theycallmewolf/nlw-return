@@ -30,8 +30,8 @@ export default function App() {
         backgroundColor: theme.colors.background,
       }}
     >
-      <Widget />
       <StatusBar style="light" backgroundColor="transparent" translucent />
+      <Widget />
     </View>
   );
 }
