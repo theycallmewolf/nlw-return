@@ -8,6 +8,7 @@ import { ChatTeardropDots } from "phosphor-react-native";
 import { styles } from "./styles";
 import { theme } from "../../theme";
 import { Options } from "../Options";
+import { Success } from "../Success";
 import { Form } from "../Form";
 import { feedbackTypes } from "../../utils/feedbackTypes";
 
@@ -31,7 +32,9 @@ export function Widget() {
         backgroundStyle={styles.modal}
         handleIndicatorStyle={styles.indicator}
       >
-        <Form feedbackType="OTHER" />
+        {/* <Options /> */}
+        {/* <Form feedbackType="OTHER" /> */}
+        <Success />
       </BottomSheet>
     </>
   );
