@@ -7,6 +7,7 @@ import { ChatTeardropDots } from "phosphor-react-native";
 
 import { styles } from "./styles";
 import { theme } from "../../theme";
+import { Options } from "../Options";
 
 export function Widget() {
   const bottomSheetRef = useRef<BottomSheet>(null);
@@ -26,7 +27,7 @@ export function Widget() {
         backgroundStyle={styles.modal}
         handleIndicatorStyle={styles.indicator}
       >
-        
+        <Options />
       </BottomSheet>
     </>
   );

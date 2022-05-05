@@ -41,7 +41,7 @@ A widget that can be used in web and mobile applications to receive feedback fro
 - [Jest](https://jestjs.io/)
 - [Cors](https://github.com/expressjs/cors#readme)
 - [ts-node](https://typestrong.org/ts-node/)
-
+- [mailtrap](https://mailtrap.io/)
 
 ---
 
