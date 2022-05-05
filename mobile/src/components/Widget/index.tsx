@@ -33,8 +33,8 @@ export function Widget() {
         handleIndicatorStyle={styles.indicator}
       >
         {/* <Options /> */}
-        {/* <Form feedbackType="OTHER" /> */}
-        <Success />
+        <Form feedbackType="BUG" />
+        {/* <Success /> */}
       </BottomSheet>
     </>
   );
