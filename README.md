@@ -21,7 +21,7 @@ A widget that can be used in web and mobile applications to receive feedback fro
 
 **[Figma Prototype](https://www.figma.com/community/file/1102912516166573468)**
 
-**Front-end Stack**
+**Web Front-end Stack**
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [ReactJS](https://reactjs.org/)
@@ -30,6 +30,15 @@ A widget that can be used in web and mobile applications to receive feedback fro
 - [HeadlessUi](https://headlessui.dev/)
 - [html2canvas](https://html2canvas.hertzen.com/)
 - [phosphor icons](https://phosphoricons.com/)
+
+**Mobile Front-end Stack**
+
+- [Expo](https://docs.expo.dev/)
+- [React Native Bottom Sheet](https://gorhom.github.io/react-native-bottom-sheet/)
+- [React Native View Shot](https://docs.expo.dev/versions/latest/sdk/captureRef/#api)
+- [React Native Svg](https://docs.expo.dev/versions/latest/sdk/svg/)
+- [React Native iPhone X Helper](https://github.com/ptelad/react-native-iphone-x-helper)
+- [axios](https://axios-http.com/docs/intro)
 
 **Back-end Stack**
 
