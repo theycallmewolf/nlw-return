@@ -23,12 +23,25 @@ A widget that can be used in web and mobile applications to receive feedback fro
 
 **Front-end Stack**
 
+- [TypeScript](https://www.typescriptlang.org/)
 - [ReactJS](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Tailwind](https://tailwindcss.com/)
 - [HeadlessUi](https://headlessui.dev/)
 - [html2canvas](https://html2canvas.hertzen.com/)
 - [phosphor icons](https://phosphoricons.com/)
+
+**Back-end Stack**
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [NodeJS](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
+- [Prisma](https://www.prisma.io/)
+- [Nodemailer](https://nodemailer.com/about/)
+- [Jest](https://jestjs.io/)
+- [Cors](https://github.com/expressjs/cors#readme)
+- [ts-node](https://typestrong.org/ts-node/)
+
 
 ---
 
