@@ -23,12 +23,15 @@ export function ScreenshotButton({
       style={styles.container}
     >
       {screenshot ? (
-        <Trash
-          size={22}
-          color={theme.colors.text_secondary}
-          weight="fill"
-          style={styles.removeIcon}
-        />
+        <View>
+          <Image source={{ uri: screenshot }} style={styles.image} />
+          <Trash
+            size={22}
+            color={theme.colors.text_secondary}
+            weight="fill"
+            style={styles.removeIcon}
+          />
+        </View>
       ) : (
         <Camera size={22} color={theme.colors.text_secondary} weight="bold" />
       )}
