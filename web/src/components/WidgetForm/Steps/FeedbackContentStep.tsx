@@ -3,6 +3,8 @@ import { ArrowLeft } from "phosphor-react";
 import { FeedbackType, feedbackTypes } from "..";
 import { CloseButton } from "../../CloseButton";
 import { ScreenshotButton } from "../ScreenshotButton";
+import { api } from "../../../lib/api";
+import { Loading } from "../../Loading";
 
 interface FeedbackContentStepProps {
   feedbackType: FeedbackType;
@@ -27,10 +29,10 @@ export function FeedbackContentStep({
 
       setIsSending(true);
 
-      // TO-DO
-      console.log({
-        screenshot,
+      api.post("feedbacks", {
+        type: feedbackType,
         comment,
+        screenshot,
       });
 
       setFeedbackSent(true);
