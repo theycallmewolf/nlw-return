@@ -17,12 +17,15 @@ export function FeedbackContentStep({
 }: FeedbackContentStepProps) {
   const [screenshot, setScreenshot] = useState<string | null>(null);
   const [comment, setComment] = useState("");
+  const [isSending, setIsSending] = useState(false);
 
   const feedbackTypeInfo = useMemo(() => feedbackTypes[feedbackType], []);
 
   const submitFeedback = useCallback(
     (evt: FormEvent) => {
       evt.preventDefault();
+
+      setIsSending(true);
 
       // TO-DO
       console.log({
@@ -31,6 +34,7 @@ export function FeedbackContentStep({
       });
 
       setFeedbackSent(true);
+      setIsSending(false);
     },
     [screenshot, comment]
   );
@@ -69,10 +73,10 @@ export function FeedbackContentStep({
             />
             <button
               type="submit"
-              disabled={comment.length === 0}
+              disabled={comment.length === 0 || isSending}
               className="p-2 bg-brand-500 rounded-md border-transparent flex-1 flex justify-center items-center text-sm hover:bg-brand-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors disabled:opacity-50 disabled:hover:bg-brand-500"
             >
-              Enviar Feedback
+              {isSending ? <Loading /> : "Enviar Feedback"}
             </button>
           </footer>
         </form>
