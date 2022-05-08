@@ -54,4 +54,16 @@ A widget that can be used in web and mobile applications to receive feedback fro
 
 ---
 
+**Front-end Prototype**
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FTzY0jPQXFrASkGcRFmtFbT%2FFeedback-Widget%3Fnode-id%3D100%253A2114" allowfullscreen></iframe>
+
+---
+
+**Deploy**
+- client : [Vercel](https://vercel.com/)
+- api : [Railway](https://railway.app/)
+
+---
+
 Online workshop from [rocketseat](https://www.rocketseat.com.br/)
